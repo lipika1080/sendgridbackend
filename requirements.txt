@@ -1,5 +1,4 @@
 Flask
-flask-cors
 pymongo
-dnspython
 sendgrid
+flask-cors
