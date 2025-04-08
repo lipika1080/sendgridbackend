@@ -30,8 +30,8 @@ def send_email():
     )
 
     try:
-        # Using hardcoded API key for now
-        sg = SendGridAPIClient("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")
+        # Updated SendGrid API key
+        sg = SendGridAPIClient("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")
         response = sg.send(message)
         return jsonify({"message": "Email sent", "status_code": response.status_code})
     except Exception as e:
@@ -62,7 +62,7 @@ def create_appointment():
             subject=subject,
             html_content=body
         )
-        sg = SendGridAPIClient("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")
+        sg = SendGridAPIClient("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")
         sg.send(message)
     except Exception as e:
         print("Acknowledgment email failed:", str(e))
