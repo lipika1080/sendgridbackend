@@ -4,10 +4,9 @@ from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail
 from bson import ObjectId
 import os
-from dotenv import load_dotenv
 from database import collection  # MongoDB collection from database.py
 
-load_dotenv()  # Load environment variables from .env file
+
 
 app = Flask(__name__)
 CORS(app)
